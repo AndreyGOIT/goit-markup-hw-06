@@ -731,6 +731,8 @@ body {
     pointer-events: none;
 }
 .modal {
+    display: block;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -753,5 +755,45 @@ body {
     padding: 9px;
     border-radius: 50%;
     cursor: pointer;
+}
+.contact-form {
+    display: block;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.contact-form-title {
+    display: inline-block;
+    justify-content: flex-start;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    color: #212121;
+}
+.user-name-title {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    
+    color: #757575;
+}
+input {
+    padding: 8px;
+    font-family: inherit;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
 }
 /*======= /BACKDROP ==========*/

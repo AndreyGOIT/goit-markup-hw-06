@@ -416,16 +416,54 @@
                     </svg>
                 </button>
                 <form class="contact-form">
-                    <h2 class="contact-form-title">Оставьте свои данные, мы вам перезвоним</p>
-                    <label class="user-name">
-                        <p class="user-name-title">Имя</p>
-                        <input type="text" name="username" autofocus />
+                    <p class="contact-form-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <label class="contact-form-field" for="user-name">
+                        <p class="contact-form-field-title">Имя</p>
+                        <div class="contact-form-input-wrapper">
+                            <input class="contact-form-input"type="text" name="username" id="user-name" autofocus required pattern="[a-zA-Z]*"/>
+                            <svg class="contact-form-icon">
+                                <use href="./images/sprite.svg#icon-person-black"></use>
+                            </svg>
+                        </div>                        
                     </label>
-                    <label class="user-phone">
-                        Email
-                        <input type="email" name="email" />
+                    <label class="contact-form-field" for="phone_number">
+                        <p class="contact-form-field-title">Телефон</p>
+                        <div class="contact-form-input-wrapper">
+                            <input class="contact-form-input"type="tel" name="phone_number" id="phone_number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx"/>
+                            <svg class="contact-form-icon">
+                                <use href="./images/sprite.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
                     </label>
-                    <button class="submit-btn" type="submit">Submit</button>
+                    <label class="contact-form-field" for="email">
+                        <p class="contact-form-field-title">Почта</p>
+                        <div class="contact-form-input-wrapper">
+                            <input class="contact-form-input"type="email" name="email" id="email" required/>
+                            <svg class="contact-form-icon">
+                                <use href="./images/sprite.svg#icon-email-black"></use>
+                            </svg>
+                        </div>                        
+                    </label>
+                    <label class="contact-form-field" for="comments">
+                        <p class="contact-form-field-title">Комментарий</p>
+                        <textarea class="textarea" name="comments" id="comments" rows="7" placeholder="Введите текст"></textarea>
+                    </label>
+                    <div class="contact-form-checkbox visually-hidden">
+                        <input type="checkbox" name="agreement" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="checkbox-policy"/>
+                        <label class="checkbox-label" for="checkbox-policy">
+                            Соглашаюсь с рассылкой и принимаю <a class="agreement-conditions" href="">Условия договора</a>
+                        </label>  
+                    </div>
+                    
+                    <div class="agreement-line">
+                        <svg class="icon icon-icon-check">
+                            <use href="./images/sprite.svg#icon-icon-check"></use>
+                        </svg>
+                        <p class="agreement">Соглашаюсь с рассылкой и принимаю <a class="agreement-conditions" href="">Условия договора</a></p>
+                    </div>
+                    <br />
+                    <br />
+                    <button class="submit-btn" type="submit">Отправить</button>
                 </form>
             </div>
         </div>

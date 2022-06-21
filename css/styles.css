@@ -447,6 +447,54 @@ body {
 .social-icons-link-bottom:focus {
     background-color: var(--accent-color);
 }
+.bottom-right-side {
+    display: flex;
+    margin-right: auto;
+}
+
+/*-- секция подписки --*/
+.subscription-section {
+    padding-left: auto;
+}
+.subscription-section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.subscription-section-title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.email-wrapper {
+    display: flex;
+}
+.subscription-section-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+    background-color: var(--hero-bottom-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.subscription-section-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: transparent;
+}
+
 /*==========/FOOTER ============*/
 
 /*=========== HERO ============*/
@@ -898,6 +946,7 @@ body {
     height: 50px;
     cursor: pointer;
     color: #FFFFFF;
+    border: transparent;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

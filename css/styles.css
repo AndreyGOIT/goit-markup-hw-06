@@ -813,8 +813,7 @@ body {
     flex-direction: column;
 }
 .contact-form-title {
-    display: inline-block;
-    height: 23px;
+    display: block;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -890,15 +889,11 @@ body {
     
     color: rgba(117, 117, 117, 0.5);
 }
-.contact-form-checkbox {
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-    height: 24px;
-}
 .agreement-line {
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-right: 7px;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
@@ -914,6 +909,7 @@ body {
     width: 1.2998046875em;
 }
 .checkbox-input:checked + .agreement-line {
+    background-position: center;
     background-color: var(--accent-color);
 }
 .checkbox-input:checked+.agreement-line {
@@ -931,7 +927,10 @@ body {
 }
 .checkbox-label {
     display: flex;
-    height: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: 8px;
     font-weight: 400;
     font-size: 14px;
